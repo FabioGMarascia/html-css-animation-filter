@@ -58,3 +58,28 @@
   scale: 1.5;
   transition-duration: 2s;
 }
+
+/* Esercizio 10 */
+@keyframes rotating {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ex-10-icon {
+  animation: rotating 2s linear infinite;
+}
+
+/* Esercizio 11 */
+@keyframes rotating {
+  90% {
+    transform: rotate(320deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.ex-11-icon:hover {
+  animation: rotating 2s linear;
+}
