@@ -47,14 +47,14 @@
 /* Esercizio 8 */
 .ex-8-img:hover {
   filter: saturate(0.2) brightness(1.2);
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   transition-duration: 2s;
 }
 
 /* Esercizio 9 */
 .ex-9-img:hover {
   filter: saturate(0.2) brightness(1.2);
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   scale: 1.5;
   transition-duration: 2s;
 }
@@ -71,7 +71,7 @@
 }
 
 /* Esercizio 11 */
-@keyframes rotating {
+@keyframes semi-rotating {
   90% {
     transform: rotate(320deg);
   }
@@ -81,5 +81,52 @@
 }
 
 .ex-11-icon:hover {
-  animation: rotating 2s linear;
+  animation: semi-rotating 2s;
+}
+
+/* Esercizio 12 */
+@keyframes slide-right {
+  0% {
+    left: 20px;
+  }
+  25% {
+    left: 80px;
+  }
+  50% {
+    left: 130px;
+  }
+  75% {
+    left: 80px;
+  }
+  100% {
+    left: 20px;
+  }
+}
+
+.ex-12-top-white:hover {
+  background-color: black;
+  animation: slide-right 3s linear;
+}
+
+@keyframes slide-left {
+  0% {
+    right: 40px;
+  }
+  25% {
+    right: 80px;
+  }
+  50% {
+    right: 140px;
+  }
+  75% {
+    right: 80px;
+  }
+  100% {
+    right: 40px;
+  }
+}
+
+.ex-12-bottom-white:hover {
+  background-color: black;
+  animation: slide-left 3s linear;
 }
