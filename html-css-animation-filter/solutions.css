@@ -85,48 +85,28 @@
 }
 
 /* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+  animation: slide-right 2s linear;
+}
+
 @keyframes slide-right {
-  0% {
-    left: 20px;
-  }
-  25% {
-    left: 80px;
-  }
   50% {
     left: 130px;
   }
-  75% {
-    left: 80px;
-  }
   100% {
     left: 20px;
   }
 }
 
-.ex-12-top-white:hover {
-  background-color: black;
-  animation: slide-right 3s linear;
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: slide-left 2s linear;
 }
 
 @keyframes slide-left {
-  0% {
-    right: 40px;
-  }
-  25% {
-    right: 80px;
-  }
   50% {
     right: 140px;
-  }
-  75% {
-    right: 80px;
   }
   100% {
     right: 40px;
   }
-}
-
-.ex-12-bottom-white:hover {
-  background-color: black;
-  animation: slide-left 3s linear;
 }
