@@ -91,10 +91,10 @@
 
 @keyframes slide-right {
   50% {
-    left: 130px;
+    left: 70%;
   }
   100% {
-    left: 20px;
+    left: 10%;
   }
 }
 
@@ -104,17 +104,16 @@
 
 @keyframes slide-left {
   50% {
-    right: 140px;
+    right: 70%;
   }
   100% {
-    right: 40px;
+    right: 20%;
   }
 }
 
 /* Esercizio 13 */
 .ex-13-button:hover .ex-13-top-white {
-  animation: rotate-top 5s linear;
-  background-color: blue;
+  animation: rotate-top 3s linear;
 }
 
 @keyframes rotate-top {
@@ -143,13 +142,12 @@
 }
 
 .ex-13-button:hover .ex-13-bottom-white {
-  animation: rotate-bottom 5s linear;
-  background-color: blue;
+  animation: rotate-bottom 3s linear;
 }
 
 @keyframes rotate-bottom {
   0% {
-    right: 10%;
+    right: 20%;
   }
   30% {
     right: 85%;
@@ -168,6 +166,6 @@
     bottom: -15%;
   }
   100% {
-    right: 10%;
+    right: 20%;
   }
 }
