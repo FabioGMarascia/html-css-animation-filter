@@ -110,3 +110,64 @@
     right: 40px;
   }
 }
+
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white {
+  animation: rotate-top 5s linear;
+  background-color: blue;
+}
+
+@keyframes rotate-top {
+  0% {
+    left: 10%;
+  }
+  30% {
+    left: 85%;
+    top: -15%;
+  }
+  45% {
+    left: 85%;
+    top: 85%;
+  }
+  75% {
+    top: 85%;
+    left: -15%;
+  }
+  90% {
+    left: -15%;
+    top: -15%;
+  }
+  100% {
+    left: 10%;
+  }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: rotate-bottom 5s linear;
+  background-color: blue;
+}
+
+@keyframes rotate-bottom {
+  0% {
+    right: 10%;
+  }
+  30% {
+    right: 85%;
+    bottom: -15%;
+  }
+  45% {
+    right: 85%;
+    bottom: 85%;
+  }
+  75% {
+    bottom: 85%;
+    right: -15%;
+  }
+  90% {
+    right: -15%;
+    bottom: -15%;
+  }
+  100% {
+    right: 10%;
+  }
+}
